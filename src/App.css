@@ -1,0 +1,136 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: white;
+  background:
+    radial-gradient(circle at top left, #173b5e, transparent 40%),
+    radial-gradient(circle at bottom right, #40205f, transparent 40%),
+    linear-gradient(135deg, #050816, #10172a, #080b18);
+}
+
+.counter-box {
+  width: 100%;
+  max-width: 460px;
+  padding: 45px 25px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(15px);
+}
+
+.subtitle {
+  color: #60a5fa;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.description {
+  color: #aab5ca;
+  font-size: 14px;
+}
+
+.count-display {
+  margin: 35px 0;
+  font-size: 100px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 0 35px rgba(96, 165, 250, 0.35);
+  overflow-wrap: anywhere;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.buttons button {
+  min-width: 65px;
+  min-height: 48px;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, filter 0.2s;
+}
+
+.buttons button:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.15);
+}
+
+.buttons button:active {
+  transform: scale(0.95);
+}
+
+.add {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+}
+
+.reduce {
+  background: linear-gradient(135deg, #f43f5e, #be123c);
+}
+
+.reset {
+  background: #374151;
+}
+
+.add-five {
+  background: linear-gradient(135deg, #10b981, #047857);
+}
+
+.reduce-five {
+  background: linear-gradient(135deg, #f97316, #c2410c);
+}
+
+.footer {
+  margin-top: 35px;
+  color: #8492aa;
+  font-size: 12px;
+}
+
+@media (max-width: 400px) {
+  .counter-box {
+    padding: 35px 15px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .count-display {
+    font-size: 80px;
+  }
+
+  .buttons {
+    gap: 8px;
+  }
+}
